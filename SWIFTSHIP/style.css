@@ -1,0 +1,210 @@
+body {
+  height: 100%;
+  font-family: "Source Sans 3", system, -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  background-image: url(img/background.png);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+nav .container {
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 73px;
+}
+
+.nav-brand {
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  width: 30px;
+  height: auto;
+}
+
+.menu-icon span {
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  list-style: none;
+  padding: 230px 20px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  display: none;
+  opacity: 0.85;
+}
+
+.menu li a {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  width: 133px;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+
+.close-button {
+  position: fixed;
+  top: 96px;
+  right: 382px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  margin-bottom: 68px;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-header {
+  margin: 0;
+  width: 528px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 68px;
+}
+
+.hero-subheader {
+  margin: 0;
+  width: 462px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.6);
+  line-height: 30px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 35px;
+}
+
+.primary-button {
+  border: none;
+  border-radius: 100px;
+  padding: 15px 30px;
+  background-color: #3757ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 30px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.container .features {
+  background-color: #3757ff;
+  height: 259px;
+  padding: 0 70px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.features {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vertical-line {
+  height: 80px;
+  border-left: 2px solid rgb(255, 255, 255, 0.05);
+}
+
+.feature-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+}
+
+.feature-description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.6);
+  line-height: 26px;
+}
